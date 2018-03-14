@@ -23,7 +23,7 @@ class App < Sinatra::Base
     if session[:foo] == 'hello'
       redirect '/fetch'
     else
-      session
+      session[:foo]
     end
   end
 
